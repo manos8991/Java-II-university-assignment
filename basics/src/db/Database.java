@@ -41,9 +41,10 @@ public class Database {
             System.out.println("INSIDE FIRST TRY");
         }
         try {
+            
             connection = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@oracle12c.hua.gr:1521:orcl", "IT21608",
-                    "IT21608");
+                    "*******", "******",
+                    "******");
             System.out.println("Connection ok");
         } catch (SQLException ex) {
             Logger.getLogger("Server not found");
